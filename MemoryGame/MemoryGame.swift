@@ -33,14 +33,6 @@ class MemoryGame {
         }
     }
     
-    func dropValues() {
-        for index in cards.indices {
-            cards[index].isFaceUp = false
-            cards[index].isMatched = false
-        }
-        countOfNotMatchedPairsOfCards = cards.count / 2
-    }
-    
     init(numberOfPairsOfCards: Int) {
         countOfNotMatchedPairsOfCards = numberOfPairsOfCards
         for _ in 1...numberOfPairsOfCards {
