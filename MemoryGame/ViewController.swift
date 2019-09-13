@@ -40,9 +40,10 @@ class ViewController: UIViewController {
     
     @IBAction func repeatGame(_ sender: UIButton) {
         flipCount = 0
-        game.dropValues()
+        game = MemoryGame(numberOfPairsOfCards: cardButtons.count / 2)
         updateViewFromModel()
-        game.cards.shuffle()
+        emojiChoices = ["🍍", "🥥", "🍓", "🍒", "🍉", "🍏", "🍎", "🍋", "🍇", "🍐"]
+        emoji = [:]
         gameRepeatButton.isHidden = true
     }
     

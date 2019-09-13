@@ -47,6 +47,6 @@ class MemoryGame {
             let card = Card()
             cards += [card, card]
         }
-        cards.shuffle()
+//        cards.shuffle()
     }
 }
